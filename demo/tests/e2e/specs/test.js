@@ -1,21 +1,11 @@
-// For authoring Nightwatch tests, see
-// https://nightwatchjs.org/guide
-
 module.exports = {
-  'default e2e tests': browser => {
+  'Test list rendering' : function (browser) {
     browser
-      .init()
+      .url('http://localhost:8080/list')
       .waitForElementVisible('#app')
-      .assert.elementPresent('.hello')
-      .assert.containsText('h1', 'Welcome to Your Vue.js App')
-      .assert.elementCount('img', 1)
-      .end()
-  },
-
-  'example e2e test using a custom command': browser => {
-    browser
-      .openHomepage()
-      .assert.elementPresent('.hello')
-      .end()
+      .assert.elementPresent('a')
+      .assert.elementCount('img', 5)
+      .expect.element('img').to.have.attribute('src')
+      .which.matches(/^(http(s)?:\/\/)\w+[^\s]+(\.[^\s]+){1,}$/);
   }
-}
+};
