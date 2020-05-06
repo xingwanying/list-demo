@@ -17,12 +17,19 @@ Click Start go to the list page.
 ## /list
 
 This page initializes the loading of five pictures. Each time the scroll bar slides to the bottom will trigger request to load another five pictures.
+
 ![list](https://s1.ax1x.com/2020/05/06/YAwJoT.png)
+
 Click the star icon on the lower right corner of each picture to mark the photo. Marked pictures will appear at the top of the list and still stays after refreshing the page.
+
 ![mark](https://s1.ax1x.com/2020/05/06/YAwTTf.png)
+
 Click the icon on the upper left corner of the marked picture to cancel the mark.
+
 ![marked](https://s1.ax1x.com/2020/05/06/YA08cd.png)
+
 Click the back icon on the header to return to the home page.
+
 ![back](https://s1.ax1x.com/2020/05/06/YA0ov9.png)
 
 ## Testing
